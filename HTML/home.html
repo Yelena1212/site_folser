@@ -9,6 +9,7 @@
 		rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/mystyle.css" />
 	<title>Portfolio</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -25,10 +26,10 @@
 				</div>
 
 				<div class="nav">
-					<a class="nav_link" href="#">Home</a>
-					<a class="nav_link" href="#">Guestbook</a>
-					<a class="nav_link" href="#">Interest</a>
-					<a class="nav_link" href="#">Reflections</a>
+					<a class="nav_link" href="home.html">Home</a>
+					<a class="nav_link" href="guestbook.html">Guestbook</a>
+					<a class="nav_link" href="interests.html">Interest</a>
+					<a class="nav_link" href="reflections.html">Reflections</a>
 				</div>
 			</div>
 		</div>
@@ -53,7 +54,7 @@
 							<img src="images/instagram.png" alt="">
 						</a>
 					</div>
-					<button onclick="resume.html" class="btn" type="button">SEE MY RESUME</button>
+					<button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
 
 				</div>
 				<img class="intro_photo" src="images/intro_photo.png" alt="">
@@ -87,7 +88,7 @@
 						</p>
 					</div>
 
-					<button class="btn" type="button">see my resume</button>
+					<button class="btn" type="button" data-modal="#modal_resume">see my resume</button>
 				</div>
 			</div>
 		</div>
@@ -115,16 +116,33 @@
 					</div>
 
 					<div class="footer_nav">
-						<a class="footer_nav_link" href="#">Home</a>
+						<a class="footer_nav_link" href="home.html">Home</a>
+						<a class="footer_nav_link" href="guestbook.html">Guestbook</a>
+						<a class="footer_nav_link" href="interests.html">Interest</a>
+						<a class="footer_nav_link" href="reflections.html">Reflections</a>
+						<a class="footer_nav_link" href="resume.html">Resume</a>
+
+						<!-- <a class="footer_nav_link" href="#">Home</a>
 						<a class="footer_nav_link" href="">Guestbook</a>
 						<a class="footer_nav_link" href="#">Interest</a>
 						<a class="footer_nav_link" href>Reflections</a>
-						<a class="footer_nav_link" href="#">Resume</a>
+						<a class="footer_nav_link" href="#">Resume</a> -->
 
 					</div>
 				</div>
 			</div>
 	</footer>
+
+	<script src="app.js"></script>
+
+	<div class="modal" id="modal_resume">
+		<div class="modal_dialog">
+			<h3 class="model_title">RESUME</h3>
+			<img class="model_photo" src="images/resume.jpg" alt="">
+			<a class="btn btn_edit btn_modal" href="images/resume.jpg" download>Download</a>
+		</div>
+
+	</div>
 
 </body>
 
