@@ -1,88 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8"/>
-	<link rel="stylesheet" type="text/css" href="../css/mystyle.css"/>
-	<title>Guest Book</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/mystyle.css" />
+    <title>Guest Book</title>
 </head>
+
 <body>
-	<h1>Yelena Baranchuk Guest Book</h1>
-	<img height="100" width="100" src="../images/yelena.jpeg" alt="Yelena Baranchuk photo">
-	<br><br>
-	<div>
-		<a href="../html/home.html">Home</a>
-		<a href="../html/resume.html">Resume</a>
-		<a href="../html/interests.html">Interests</a>
-		<a href="../html/reflections.html">Reflections</a>
-		<a href="../html/guestbook.html">Guestbook</a>
-	</div>
-	<br><br>
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="user">
+                    <img class="user_avatar" src="./images/myLogo.png" alt="">
+                    <div class="user_content">
+                        <div class="user_name">Yelena <br> Baranchuk</div>
+                        <div class="user_prof">Web Developer/QA Engineer</div>
 
-	<form
-	method="post"
-	action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
-        Enter Your Name: <input type="text" name="name" size="40"/>
-        <br/>
-        <br/><br/>
-        Enter Your Email: <input type="text" name="Email" size="40"/>
-        <br/>
-        <br/><br/>
-        What country do you live in?
-        <input type="text" name="country" size="40">
-        <br/>
-        <br/>
-        What is your experience in Web Development?<br/>
-        <input type="radio" name="web_experience" value="none" checked="checked"/>None
-        <br/>
-        <input type="radio" name="web_experience" value="beginner" />Beginner
-        <br/>
-        <input type="radio" name="web_experience" value="immediate" />Immediate
-        <br/>
-        <input type="radio" name="web_experience" value="advanced" />Advanced
-        <br/>
-        <br/>
-        Should we add you to our mailing list?
-        <input type="checkbox" name="mailinglist"/><br/>
-        <br/>
-        <br/>
+                    </div>
+                </div>
 
-        What web technologies are you interested in?? (check all that apply) :<br/>
-        <select name="interests" multiple="multiple" size="6">
-        	<option>HTML</option>
-        	<option>CSS</option>
-        	<option>JavaScript</option>
-        	<option>AJAX</option>
-        	<option>SQL</option>
-        	<option>PHP</option>
-        </select>
+                <div class="nav">
+                    <a class="nav_link" href="home.html">Home</a>
+                    <a class="nav_link" href="guestbook.html">Guestbook</a>
+                    <a class="nav_link" href="interests.html">Interest</a>
+                    <a class="nav_link" href="reflections.html">Reflections</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="about">
+        <div class="container">
+            <div class="about_inner">
+                <img class="about_photo_guestbook" src="images/guestbook.png" alt="">
 
-        <br/>
-        <br/>
 
-        How did you find my website?
-        <br/>
-        <select name="website">
-        	<option>Select one</option>
-        	<option>I'n friend</option>
-        	<option>A friend direct me to your site</option>
-        	<option>School Web Site</option>
-        	<option>A search engine directed me to your site</option>
-        	<option>I came across your site by accident</option>
-        	<option>Other</option>
-        </select>
-        <br/>
-        <br/>
+                <div class="form">
+                    <form class="form_text" method="post" action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+                        Enter Your Name: <input type="text" name="name" size="40" />
+                        <br />
+                        <br /><br />
+                        Enter Your Email: <input type="text" name="Email" size="40" />
+                        <br />
+                        <br /><br />
+                        What country do you live in?
+                        <input type="text" name="country" size="40">
+                        <br />
+                        <br />
+                        What is your experience in Web Development?<br />
+                        <input type="radio" name="web_experience" value="none" checked="checked" />None
+                        <br />
+                        <input type="radio" name="web_experience" value="beginner" />Beginner
+                        <br />
+                        <input type="radio" name="web_experience" value="immediate" />Immediate
+                        <br />
+                        <input type="radio" name="web_experience" value="advanced" />Advanced
+                        <br />
+                        <br />
+                        Should we add you to our mailing list?
+                        <input type="checkbox" name="mailinglist" /><br />
+                        <br />
+                        <br />
 
-        Comments:<br/>
-        <textarea name="comments" cols="50" rows="6">
+                        What web technologies are you interested in?? (check all that apply) :<br />
+                        <select name="interests" multiple="multiple" size="6">
+                            <option>HTML</option>
+                            <option>CSS</option>
+                            <option>JavaScript</option>
+                            <option>AJAX</option>
+                            <option>SQL</option>
+                            <option>PHP</option>
+                        </select>
+
+                        <br />
+                        <br />
+
+                        How did you find my website?
+                        <br />
+                        <select name="website">
+                            <option>Select one</option>
+                            <option>I'n friend</option>
+                            <option>A friend direct me to your site</option>
+                            <option>School Web Site</option>
+                            <option>A search engine directed me to your site</option>
+                            <option>I came across your site by accident</option>
+                            <option>Other</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        Comments:<br />
+                        <textarea name="comments" cols="50" rows="6">
         Enter you message here:)
          </textarea>
-         <br/>
-         <br/>
+                        <br />
+                        <br />
 
-         <input type="submit"/>
-        <input type="reset"/>
-    </form>
+                        <input type="submit" />
+                        <input type="reset" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer_inner">
+                    <div class="footer_info">
+                        <div class="footer_copyright">
+                            &copy; 2021 - Yelena Baranchuk
+                        </div>
+                        <div class="footer_social">
+                            <a class="footer_link" href="https://www.linkedin.com/in/yelena-baranchuk/"><img
+                                    src="images/linkedin_icon.png" alt="">
+                            </a>
+                            <a class="footer_link" href="https://www.facebook.com/elena.baranchuk.90"><img
+                                    src="images/facebook_icon.png" alt="">
+                            </a>
+                            <a class="footer_link" href="https://www.instagram.com/alena_wild_usa/"><img
+                                    src="images/instagram_icon.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer_nav">
+                        <a class="footer_nav_link" href="home.html">Home</a>
+                        <a class="footer_nav_link" href="guestbook.html">Guestbook</a>
+                        <a class="footer_nav_link" href="interests.html">Interest</a>
+                        <a class="footer_nav_link" href="reflections.html">Reflections</a>
+                        <a class="footer_nav_link" href="resume.html">Resume</a>
+
+                    </div>
+                </div>
+            </div>
+    </footer>
+
 
 </body>
+
 </html>

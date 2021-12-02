@@ -188,6 +188,12 @@ p {
     padding-top: 20px;
 }
 
+.about_photo_guestbook {
+    max-width: 50%;
+    padding-left: 1rem;
+    padding-top: 20px;
+}
+
 .about_content {
     width: 60%;
     margin-top: 5rem;
@@ -510,3 +516,18 @@ p {
     color: var(--light-gray);
 
 }
+
+.form {
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+    
+}
+
+.form_text {
+    width: calc(100% - 50px);
+	word-break: break-word;
+	color: var(--dark-gray);
+}
+
