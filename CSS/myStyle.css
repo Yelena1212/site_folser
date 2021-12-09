@@ -222,8 +222,6 @@ p {
     color: var(--dark-gray);
 }
 
-
-
 .modal {
     display: none;
     width: 100%;
@@ -561,6 +559,62 @@ p {
     transform: translate(-50%, -50%) scale(1);
 }
 
+.heading_photo {
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-transform: capitalize;
+    color: var(--dark-gray);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .2rem;
+    text-align: center;
+    text-shadow: 0 .3rem .5rem rgb(0,0,0,5);
+}
+
+
+.reflection_inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 7rem;
+    margin-bottom: 7rem;
+}
+
+.about_photo {
+    max-width: 40%;
+    padding-left: 3.5rem;
+    padding-top: 20px;
+}
+
+.reflection_content {
+    width: 60%;
+    margin-top: 5rem;
+    padding-left: 7.5rem;
+}
+.reflection_title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--dark-gray);
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 .1rem .3rem rgb(0,0,0,9);
+}
+
+.reflection_bigtittle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--magenta);
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 .3rem .5rem rgb(0,0,0,7);
+    opacity: 0.7;
+}
+
+.reflection_text {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--dark-gray);
+}
 
 .footer {
     padding: 1rem 0;
@@ -626,7 +680,6 @@ p {
 	color: var(--dark-gray);
 }
 
-
 .header_interests {
     padding: 1.2rem 0;
     position: relative;
@@ -653,40 +706,4 @@ p {
      line-height: 123px;
      font-weight: bold;
     /* opacity: 0.7; */
-}
-
-.photo {
-    padding-bottom: 244px;
-}
-
-.photo_title {
-    margin-bottom: 394px;
-}
-
-.photo-slider_up {
-    margin-bottom: 63px;
-}
-
-.photo_slider_down {
-    margin-bottom: 301px;
-}
-
-.photo-slider_item--up {
-    max-width: 40%;
-    
-}
-.photo-slider_item--down {
-    margin: 0 33px;
-    
-}
-
-.photo-slider_item--up img {
-    max-width: 1200px;
-    width: 100%;
-    height: 800px;
-}
-
-.photo-slider_item--up video {
-    max-width: 1264px;
-    height: 800;
 }
